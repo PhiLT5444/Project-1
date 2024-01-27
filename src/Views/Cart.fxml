@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CartController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="298.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Label prefHeight="40.0" prefWidth="178.0" text="YOUR CART">
+               <font>
+                  <Font name="Cambria Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="512.0" prefWidth="771.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="600.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="#" wrappingWidth="43.736724853515625">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product name" wrappingWidth="161.33676147460938">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="115.73672485351562">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="188.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantities" wrappingWidth="150.1367416381836">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="291.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Into money" wrappingWidth="95.73672485351562">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane prefHeight="308.0" prefWidth="771.0">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <content>
+                  <VBox fx:id="layout" prefHeight="300.0" prefWidth="771.0" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="771.0">
+               <children>
+                  <Button fx:id="yourOrderButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: #7cd676;" text="Your Orders">
+                     <font>
+                        <Font name="Cambria Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL: " textAlignment="RIGHT" wrappingWidth="514.2729609012604">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="sumButton" layoutX="722.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" wrappingWidth="84.97570717334747">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="741.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="payButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="203.0" style="-fx-background-color: #7cd676;" text="ORDER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
